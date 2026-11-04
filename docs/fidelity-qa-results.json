@@ -1,0 +1,537 @@
+{
+  "measurements": [
+    {
+      "width": 320,
+      "height": 1421,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 205
+        },
+        {
+          "id": "about",
+          "y": 205,
+          "height": 113
+        },
+        {
+          "id": "why-title",
+          "y": 318,
+          "height": 132
+        },
+        {
+          "id": "services",
+          "y": 450,
+          "height": 170
+        },
+        {
+          "id": "benefits-title",
+          "y": 621,
+          "height": 122
+        },
+        {
+          "id": "difference-title",
+          "y": 742,
+          "height": 86
+        },
+        {
+          "id": "steps",
+          "y": 828,
+          "height": 78
+        },
+        {
+          "id": "reviews-title",
+          "y": 906,
+          "height": 155
+        },
+        {
+          "id": "faq",
+          "y": 1061,
+          "height": 235
+        },
+        {
+          "id": "contact",
+          "y": 1296,
+          "height": 126
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 360,
+      "height": 1536,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 231
+        },
+        {
+          "id": "about",
+          "y": 231,
+          "height": 127
+        },
+        {
+          "id": "why-title",
+          "y": 357,
+          "height": 149
+        },
+        {
+          "id": "services",
+          "y": 506,
+          "height": 189
+        },
+        {
+          "id": "benefits-title",
+          "y": 697,
+          "height": 137
+        },
+        {
+          "id": "difference-title",
+          "y": 834,
+          "height": 97
+        },
+        {
+          "id": "steps",
+          "y": 930,
+          "height": 85
+        },
+        {
+          "id": "reviews-title",
+          "y": 1015,
+          "height": 140
+        },
+        {
+          "id": "faq",
+          "y": 1155,
+          "height": 240
+        },
+        {
+          "id": "contact",
+          "y": 1395,
+          "height": 141
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 375,
+      "height": 1591,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 240
+        },
+        {
+          "id": "about",
+          "y": 240,
+          "height": 132
+        },
+        {
+          "id": "why-title",
+          "y": 372,
+          "height": 155
+        },
+        {
+          "id": "services",
+          "y": 527,
+          "height": 197
+        },
+        {
+          "id": "benefits-title",
+          "y": 725,
+          "height": 143
+        },
+        {
+          "id": "difference-title",
+          "y": 868,
+          "height": 101
+        },
+        {
+          "id": "steps",
+          "y": 969,
+          "height": 89
+        },
+        {
+          "id": "reviews-title",
+          "y": 1057,
+          "height": 146
+        },
+        {
+          "id": "faq",
+          "y": 1203,
+          "height": 241
+        },
+        {
+          "id": "contact",
+          "y": 1444,
+          "height": 147
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 390,
+      "height": 1646,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 250
+        },
+        {
+          "id": "about",
+          "y": 250,
+          "height": 137
+        },
+        {
+          "id": "why-title",
+          "y": 387,
+          "height": 161
+        },
+        {
+          "id": "services",
+          "y": 548,
+          "height": 204
+        },
+        {
+          "id": "benefits-title",
+          "y": 754,
+          "height": 148
+        },
+        {
+          "id": "difference-title",
+          "y": 902,
+          "height": 105
+        },
+        {
+          "id": "steps",
+          "y": 1007,
+          "height": 92
+        },
+        {
+          "id": "reviews-title",
+          "y": 1099,
+          "height": 152
+        },
+        {
+          "id": "faq",
+          "y": 1250,
+          "height": 243
+        },
+        {
+          "id": "contact",
+          "y": 1493,
+          "height": 153
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 430,
+      "height": 1793,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 275
+        },
+        {
+          "id": "about",
+          "y": 275,
+          "height": 152
+        },
+        {
+          "id": "why-title",
+          "y": 427,
+          "height": 177
+        },
+        {
+          "id": "services",
+          "y": 604,
+          "height": 224
+        },
+        {
+          "id": "benefits-title",
+          "y": 830,
+          "height": 164
+        },
+        {
+          "id": "difference-title",
+          "y": 994,
+          "height": 115
+        },
+        {
+          "id": "steps",
+          "y": 1109,
+          "height": 101
+        },
+        {
+          "id": "reviews-title",
+          "y": 1210,
+          "height": 167
+        },
+        {
+          "id": "faq",
+          "y": 1377,
+          "height": 247
+        },
+        {
+          "id": "contact",
+          "y": 1625,
+          "height": 168
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 665,
+      "height": 2655,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 426
+        },
+        {
+          "id": "about",
+          "y": 426,
+          "height": 234
+        },
+        {
+          "id": "why-title",
+          "y": 660,
+          "height": 273
+        },
+        {
+          "id": "services",
+          "y": 934,
+          "height": 342
+        },
+        {
+          "id": "benefits-title",
+          "y": 1277,
+          "height": 253
+        },
+        {
+          "id": "difference-title",
+          "y": 1530,
+          "height": 178
+        },
+        {
+          "id": "steps",
+          "y": 1709,
+          "height": 156
+        },
+        {
+          "id": "reviews-title",
+          "y": 1864,
+          "height": 258
+        },
+        {
+          "id": "faq",
+          "y": 2123,
+          "height": 273
+        },
+        {
+          "id": "contact",
+          "y": 2396,
+          "height": 259
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 768,
+      "height": 4074,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 674
+        },
+        {
+          "id": "about",
+          "y": 674,
+          "height": 403
+        },
+        {
+          "id": "why-title",
+          "y": 1077,
+          "height": 352
+        },
+        {
+          "id": "services",
+          "y": 1428,
+          "height": 552
+        },
+        {
+          "id": "benefits-title",
+          "y": 2008,
+          "height": 370
+        },
+        {
+          "id": "difference-title",
+          "y": 2378,
+          "height": 289
+        },
+        {
+          "id": "steps",
+          "y": 2668,
+          "height": 243
+        },
+        {
+          "id": "reviews-title",
+          "y": 2911,
+          "height": 347
+        },
+        {
+          "id": "faq",
+          "y": 3258,
+          "height": 409
+        },
+        {
+          "id": "contact",
+          "y": 3667,
+          "height": 407
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 1024,
+      "height": 4022,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 674
+        },
+        {
+          "id": "about",
+          "y": 674,
+          "height": 384
+        },
+        {
+          "id": "why-title",
+          "y": 1058,
+          "height": 337
+        },
+        {
+          "id": "services",
+          "y": 1395,
+          "height": 550
+        },
+        {
+          "id": "benefits-title",
+          "y": 1973,
+          "height": 370
+        },
+        {
+          "id": "difference-title",
+          "y": 2343,
+          "height": 273
+        },
+        {
+          "id": "steps",
+          "y": 2616,
+          "height": 222
+        },
+        {
+          "id": "reviews-title",
+          "y": 2838,
+          "height": 371
+        },
+        {
+          "id": "faq",
+          "y": 3208,
+          "height": 407
+        },
+        {
+          "id": "contact",
+          "y": 3615,
+          "height": 407
+        }
+      ],
+      "clippedText": []
+    },
+    {
+      "width": 1440,
+      "height": 4093,
+      "overflow": false,
+      "missing": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 674
+        },
+        {
+          "id": "about",
+          "y": 674,
+          "height": 394
+        },
+        {
+          "id": "why-title",
+          "y": 1068,
+          "height": 348
+        },
+        {
+          "id": "services",
+          "y": 1415,
+          "height": 560
+        },
+        {
+          "id": "benefits-title",
+          "y": 2003,
+          "height": 370
+        },
+        {
+          "id": "difference-title",
+          "y": 2373,
+          "height": 283
+        },
+        {
+          "id": "steps",
+          "y": 2656,
+          "height": 232
+        },
+        {
+          "id": "reviews-title",
+          "y": 2888,
+          "height": 381
+        },
+        {
+          "id": "faq",
+          "y": 3268,
+          "height": 417
+        },
+        {
+          "id": "contact",
+          "y": 3686,
+          "height": 407
+        }
+      ],
+      "clippedText": []
+    }
+  ],
+  "errors": [],
+  "interactions": "menu, Escape focus return, anchor focus, FAQ mouse/keyboard, every WhatsApp URL, actual CTA popup, Instagram URL, RTL carousel buttons/Home/End and touch swipe, reduced motion and no-JavaScript visibility passed"
+}

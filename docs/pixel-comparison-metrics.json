@@ -1,0 +1,77 @@
+{
+  "method": "Absolute RGB channel differences. Sections are resampled to reference heights only for the diagnostic heatmap; natural-size screenshot is unaltered. FAQ omitted from aligned heatmap because absent in reference. Generated photos and safe demo copy intentionally produce residual differences. This is not a claim of pixel identity.",
+  "sections": [
+    {
+      "section": "home",
+      "referenceY": 0,
+      "implementedY": 0,
+      "referenceHeight": 420,
+      "implementedHeight": 426,
+      "meanAbsoluteRGBDifference": 53.14
+    },
+    {
+      "section": "about",
+      "referenceY": 420,
+      "implementedY": 426,
+      "referenceHeight": 237,
+      "implementedHeight": 234,
+      "meanAbsoluteRGBDifference": 42.22
+    },
+    {
+      "section": "why-title",
+      "referenceY": 657,
+      "implementedY": 660,
+      "referenceHeight": 277,
+      "implementedHeight": 273,
+      "meanAbsoluteRGBDifference": 31.44
+    },
+    {
+      "section": "services",
+      "referenceY": 934,
+      "implementedY": 934,
+      "referenceHeight": 339,
+      "implementedHeight": 342,
+      "meanAbsoluteRGBDifference": 41.49
+    },
+    {
+      "section": "benefits-title",
+      "referenceY": 1273,
+      "implementedY": 1277,
+      "referenceHeight": 256,
+      "implementedHeight": 253,
+      "meanAbsoluteRGBDifference": 66.81
+    },
+    {
+      "section": "difference-title",
+      "referenceY": 1529,
+      "implementedY": 1530,
+      "referenceHeight": 177,
+      "implementedHeight": 178,
+      "meanAbsoluteRGBDifference": 32.68
+    },
+    {
+      "section": "steps",
+      "referenceY": 1706,
+      "implementedY": 1709,
+      "referenceHeight": 156,
+      "implementedHeight": 156,
+      "meanAbsoluteRGBDifference": 36.77
+    },
+    {
+      "section": "reviews-title",
+      "referenceY": 1862,
+      "implementedY": 1864,
+      "referenceHeight": 253,
+      "implementedHeight": 258,
+      "meanAbsoluteRGBDifference": 43.85
+    },
+    {
+      "section": "contact",
+      "referenceY": 2115,
+      "implementedY": 2396,
+      "referenceHeight": 250,
+      "implementedHeight": 259,
+      "meanAbsoluteRGBDifference": 51.07
+    }
+  ]
+}
