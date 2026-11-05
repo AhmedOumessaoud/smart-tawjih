@@ -1,0 +1,67 @@
+{
+  "referenceSize": [
+    665,
+    2365
+  ],
+  "correctedNativeSize": [
+    665,
+    2372
+  ],
+  "correctedMobileSize": [
+    390,
+    1399
+  ],
+  "providedBeforeSize": [
+    576,
+    2378
+  ],
+  "meanAbsoluteRGBDifference": 37.82,
+  "comparisonMethod": "Same-width natural render. No vertical resizing, no hidden sections and no reconstructed website screenshot. Input before screenshot scrollbar removed only in the comparison panel. Local reference statistics and generated reviews are explicitly marked previews. Reconstructed photos/artwork and safe copy leave residual differences.",
+  "nativeSections": [
+    {
+      "id": "home",
+      "y": 0,
+      "height": 423
+    },
+    {
+      "id": "about",
+      "y": 423,
+      "height": 247
+    },
+    {
+      "id": "why-title",
+      "y": 656,
+      "height": 264
+    },
+    {
+      "id": "services",
+      "y": 920,
+      "height": 351
+    },
+    {
+      "id": "benefits-title",
+      "y": 1271,
+      "height": 253
+    },
+    {
+      "id": "difference-title",
+      "y": 1524,
+      "height": 176
+    },
+    {
+      "id": "steps",
+      "y": 1700,
+      "height": 153
+    },
+    {
+      "id": "reviews-title",
+      "y": 1853,
+      "height": 268
+    },
+    {
+      "id": "contact",
+      "y": 2121,
+      "height": 251
+    }
+  ]
+}

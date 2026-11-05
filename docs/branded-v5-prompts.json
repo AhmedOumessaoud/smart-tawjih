@@ -1,0 +1,23 @@
+{
+  "mode": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "student",
+      "prompt": "Use case: precise-object-edit. Image 1 is the photo edit target. Image 2 is the exact supporting logo insert. Preserve the woman exactly: same face, hair, smile, denim clothes, backpack, thumbs-up pose, notebook, framing and lighting. Only add the WHITE symbol from Image 2 centered on the visible navy notebook cover, approximately 28% of cover width. Reproduce its circular S and two diagonal arrows accurately; do not invent a new mark. Apply natural perspective matching the notebook cover and subtle printed ink texture. No words, no gold, no square background behind the white symbol. Keep the person a clean transparent-background cutout with real alpha, preserve complete hair/hands and original crop. High resolution commercial photograph. Do not add scenery or UI.",
+      "referenced_image_paths": [
+        "C:/Users/hp/Desktop/LP-Srervice/Smart Tawjih/smart-tawjih/assets/images/sources/student-guidance-v2.png",
+        "C:/Users/hp/Desktop/LP-Srervice/Smart Tawjih/output/brand-assets/smart-tawjih-mark-white-2048.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "key": "laptop",
+      "prompt": "Use case: precise-object-edit. Image 1 is the photo edit target. Image 2 is the exact brand artwork to place on the laptop screen. Preserve the desk, laptop, books, plants, warm light, crop and camera angle exactly. Only replace the blank navy laptop display with the logo artwork from Image 2, centered at about 70% of screen width. Reproduce accurately: white circular S symbol with diagonal arrows on the left, SMART in white upper row, TAWJIH in gold lower row. Exact text SMART TAWJIH. Match screen perspective, navy screen background, restrained realistic screen glow. Keep clean sharp readable typography and the original symbol geometry. No extra marks or text, no UI, no watermarks. High resolution commercial photograph.",
+      "referenced_image_paths": [
+        "C:/Users/hp/Desktop/LP-Srervice/Smart Tawjih/smart-tawjih/assets/images/sources/study-laptop-v2.png",
+        "C:/Users/hp/Desktop/LP-Srervice/Smart Tawjih/smart-tawjih/assets/brand/logo-full-reference-v5.png"
+      ],
+      "transparent_background": false
+    }
+  ]
+}

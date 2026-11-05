@@ -1,0 +1,114 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "heroHeight": 204,
+      "pageHeight": 1421,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 87,
+      "paragraphTop": 90,
+      "buttonBottom": 179,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-665.webp"
+    },
+    {
+      "width": 360,
+      "heroHeight": 230,
+      "pageHeight": 1535,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 98,
+      "paragraphTop": 101,
+      "buttonBottom": 201,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-665.webp"
+    },
+    {
+      "width": 375,
+      "heroHeight": 240,
+      "pageHeight": 1590,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 102,
+      "paragraphTop": 105,
+      "buttonBottom": 209,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-665.webp"
+    },
+    {
+      "width": 390,
+      "heroHeight": 249,
+      "pageHeight": 1645,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 106,
+      "paragraphTop": 110,
+      "buttonBottom": 218,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-665.webp"
+    },
+    {
+      "width": 430,
+      "heroHeight": 275,
+      "pageHeight": 1792,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 117,
+      "paragraphTop": 121,
+      "buttonBottom": 239,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-665.webp"
+    },
+    {
+      "width": 665,
+      "heroHeight": 425,
+      "pageHeight": 2654,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 181,
+      "paragraphTop": 187,
+      "buttonBottom": 370,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-665.webp"
+    },
+    {
+      "width": 768,
+      "heroHeight": 670,
+      "pageHeight": 4069,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 307,
+      "paragraphTop": 320,
+      "buttonBottom": 504,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3-1000.webp"
+    },
+    {
+      "width": 1024,
+      "heroHeight": 674,
+      "pageHeight": 4022,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 314,
+      "paragraphTop": 327,
+      "buttonBottom": 520,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3.webp"
+    },
+    {
+      "width": 1440,
+      "heroHeight": 674,
+      "pageHeight": 4093,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "headingBottom": 337,
+      "paragraphTop": 350,
+      "buttonBottom": 543,
+      "image": "http://localhost:4173/assets/images/hero-scene-v3.webp"
+    }
+  ],
+  "errors": [],
+  "interactions": "menu, Escape, WhatsApp number/message, services anchor and reduced motion passed"
+}

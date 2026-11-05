@@ -1,5 +1,11 @@
 (() => {
   'use strict';
+  // Match the available content width even with a classic desktop scrollbar.
+  function updateContentWidth() {
+    document.documentElement.style.setProperty('--content-width', `${document.documentElement.clientWidth}px`);
+  }
+  updateContentWidth();
+  window.addEventListener('resize', updateContentWidth, { passive: true });
   const config = window.SMART_TAWJIH;
   const wa = `https://wa.me/${config.whatsapp}?text=${encodeURIComponent(config.message)}`;
   document.querySelectorAll('[data-whatsapp]').forEach(link => { link.href = wa; link.target = '_blank'; link.rel = 'noopener noreferrer'; });
@@ -15,14 +21,27 @@
     if (!link) return;
     closeMenu();
     const target = document.querySelector(link.getAttribute('href'));
-    if (target) { target.tabIndex = -1; target.focus({ preventScroll: true }); }
+    if (target) {
+      if (target.tagName === 'DETAILS') target.open = true;
+      target.tabIndex = -1; target.focus({ preventScroll: true });
+    }
   });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !navigation.hidden) closeMenu(true); });
   document.addEventListener('click', event => { if (!navigation.hidden && !navigation.contains(event.target) && !menuButton.contains(event.target)) closeMenu(); });
   document.addEventListener('focusin', event => { if (!navigation.hidden && !navigation.contains(event.target) && event.target !== menuButton) closeMenu(); });
-  if (config.statisticsApproved) {
-    document.querySelector('.stats').classList.add('approved');
+  const localReferencePreview = !config.statisticsApproved && config.showLocalReferenceStats &&
+    (location.protocol === 'file:' || ['localhost','127.0.0.1','[::1]'].includes(location.hostname));
+  if (config.statisticsApproved || localReferencePreview) {
+    document.querySelector('.stats').classList.add('show-figures');
+    if (config.statisticsApproved) document.querySelector('.stats').classList.add('approved');
     document.querySelectorAll('.stat').forEach((el, i) => { const stat = config.statistics[i]; el.querySelector('strong').textContent = stat.value; el.querySelector('p').textContent = stat.label; });
+    if (localReferencePreview) {
+      document.querySelector('.stats').classList.add('reference-preview');
+      const notice = document.createElement('p');
+      notice.className = 'reference-stats-notice';
+      notice.textContent = 'معاينة محلية: أرقام التصميم توضيحية وغير معتمدة للنشر';
+      document.querySelector('.stats').after(notice);
+    }
   }
   // Only approved owner-supplied content may replace the explicit design previews.
   if (config.testimonialsApproved && config.testimonials.length) {

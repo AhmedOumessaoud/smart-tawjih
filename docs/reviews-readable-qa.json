@@ -1,0 +1,122 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "cards": [
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "cards": [
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      }
+    ]
+  },
+  {
+    "width": 563,
+    "overflow": false,
+    "cards": [
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "12px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "12px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "12px"
+      }
+    ]
+  },
+  {
+    "width": 665,
+    "overflow": false,
+    "cards": [
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "12px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "12px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "12px"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "cards": [
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      },
+      {
+        "clipped": false,
+        "photoOverlap": false,
+        "footerOverlap": false,
+        "font": "14px"
+      }
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "ctas": 4,
+  "layouts": [
+    {
+      "viewport": 320,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 320,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 320,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 360,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 360,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 360,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 375,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 375,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 375,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 390,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 390,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 390,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 430,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 430,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 430,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 768,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 768,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 768,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 1440,
+      "step": 1,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 1440,
+      "step": 2,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    },
+    {
+      "viewport": 1440,
+      "step": 3,
+      "overflow": false,
+      "missing": [],
+      "clipped": []
+    }
+  ],
+  "errors": [],
+  "checks": "CTA routing, native modal, focus trap/Escape, draft preserved, parent/student flow, phone/grade validation, optional city, back, services/consent, encoded WhatsApp popup, handoff/reopen/edit, scroll restoration passed"
+}

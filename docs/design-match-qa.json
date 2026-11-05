@@ -1,0 +1,616 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "height": 1185,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 204
+        },
+        {
+          "id": "about",
+          "y": 204,
+          "height": 124
+        },
+        {
+          "id": "why-title",
+          "y": 321,
+          "height": 128
+        },
+        {
+          "id": "services",
+          "y": 449,
+          "height": 171
+        },
+        {
+          "id": "benefits-title",
+          "y": 619,
+          "height": 122
+        },
+        {
+          "id": "difference-title",
+          "y": 741,
+          "height": 86
+        },
+        {
+          "id": "steps",
+          "y": 827,
+          "height": 74
+        },
+        {
+          "id": "reviews-title",
+          "y": 901,
+          "height": 163
+        },
+        {
+          "id": "contact",
+          "y": 1064,
+          "height": 121
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "height": 1294,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 229
+        },
+        {
+          "id": "about",
+          "y": 229,
+          "height": 138
+        },
+        {
+          "id": "why-title",
+          "y": 360,
+          "height": 144
+        },
+        {
+          "id": "services",
+          "y": 503,
+          "height": 191
+        },
+        {
+          "id": "benefits-title",
+          "y": 694,
+          "height": 137
+        },
+        {
+          "id": "difference-title",
+          "y": 831,
+          "height": 96
+        },
+        {
+          "id": "steps",
+          "y": 927,
+          "height": 83
+        },
+        {
+          "id": "reviews-title",
+          "y": 1011,
+          "height": 148
+        },
+        {
+          "id": "contact",
+          "y": 1158,
+          "height": 136
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "height": 1347,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 239
+        },
+        {
+          "id": "about",
+          "y": 239,
+          "height": 144
+        },
+        {
+          "id": "why-title",
+          "y": 374,
+          "height": 149
+        },
+        {
+          "id": "services",
+          "y": 524,
+          "height": 198
+        },
+        {
+          "id": "benefits-title",
+          "y": 722,
+          "height": 143
+        },
+        {
+          "id": "difference-title",
+          "y": 865,
+          "height": 100
+        },
+        {
+          "id": "steps",
+          "y": 965,
+          "height": 87
+        },
+        {
+          "id": "reviews-title",
+          "y": 1052,
+          "height": 153
+        },
+        {
+          "id": "contact",
+          "y": 1205,
+          "height": 142
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 1399,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 248
+        },
+        {
+          "id": "about",
+          "y": 248,
+          "height": 149
+        },
+        {
+          "id": "why-title",
+          "y": 389,
+          "height": 155
+        },
+        {
+          "id": "services",
+          "y": 544,
+          "height": 206
+        },
+        {
+          "id": "benefits-title",
+          "y": 750,
+          "height": 148
+        },
+        {
+          "id": "difference-title",
+          "y": 898,
+          "height": 104
+        },
+        {
+          "id": "steps",
+          "y": 1002,
+          "height": 90
+        },
+        {
+          "id": "reviews-title",
+          "y": 1093,
+          "height": 159
+        },
+        {
+          "id": "contact",
+          "y": 1252,
+          "height": 147
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "height": 1540,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 274
+        },
+        {
+          "id": "about",
+          "y": 274,
+          "height": 163
+        },
+        {
+          "id": "why-title",
+          "y": 427,
+          "height": 171
+        },
+        {
+          "id": "services",
+          "y": 598,
+          "height": 227
+        },
+        {
+          "id": "benefits-title",
+          "y": 825,
+          "height": 164
+        },
+        {
+          "id": "difference-title",
+          "y": 989,
+          "height": 115
+        },
+        {
+          "id": "steps",
+          "y": 1104,
+          "height": 99
+        },
+        {
+          "id": "reviews-title",
+          "y": 1203,
+          "height": 175
+        },
+        {
+          "id": "contact",
+          "y": 1378,
+          "height": 163
+        }
+      ]
+    },
+    {
+      "width": 563,
+      "height": 2009,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 358
+        },
+        {
+          "id": "about",
+          "y": 358,
+          "height": 210
+        },
+        {
+          "id": "why-title",
+          "y": 556,
+          "height": 224
+        },
+        {
+          "id": "services",
+          "y": 780,
+          "height": 297
+        },
+        {
+          "id": "benefits-title",
+          "y": 1077,
+          "height": 214
+        },
+        {
+          "id": "difference-title",
+          "y": 1291,
+          "height": 150
+        },
+        {
+          "id": "steps",
+          "y": 1441,
+          "height": 129
+        },
+        {
+          "id": "reviews-title",
+          "y": 1570,
+          "height": 227
+        },
+        {
+          "id": "contact",
+          "y": 1797,
+          "height": 213
+        }
+      ]
+    },
+    {
+      "width": 576,
+      "height": 2056,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 366
+        },
+        {
+          "id": "about",
+          "y": 366,
+          "height": 215
+        },
+        {
+          "id": "why-title",
+          "y": 569,
+          "height": 229
+        },
+        {
+          "id": "services",
+          "y": 798,
+          "height": 304
+        },
+        {
+          "id": "benefits-title",
+          "y": 1101,
+          "height": 219
+        },
+        {
+          "id": "difference-title",
+          "y": 1320,
+          "height": 153
+        },
+        {
+          "id": "steps",
+          "y": 1473,
+          "height": 132
+        },
+        {
+          "id": "reviews-title",
+          "y": 1606,
+          "height": 232
+        },
+        {
+          "id": "contact",
+          "y": 1838,
+          "height": 218
+        }
+      ]
+    },
+    {
+      "width": 665,
+      "height": 2372,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 423
+        },
+        {
+          "id": "about",
+          "y": 423,
+          "height": 247
+        },
+        {
+          "id": "why-title",
+          "y": 656,
+          "height": 264
+        },
+        {
+          "id": "services",
+          "y": 920,
+          "height": 351
+        },
+        {
+          "id": "benefits-title",
+          "y": 1271,
+          "height": 253
+        },
+        {
+          "id": "difference-title",
+          "y": 1524,
+          "height": 176
+        },
+        {
+          "id": "steps",
+          "y": 1700,
+          "height": 153
+        },
+        {
+          "id": "reviews-title",
+          "y": 1853,
+          "height": 268
+        },
+        {
+          "id": "contact",
+          "y": 2121,
+          "height": 251
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "height": 3691,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 670
+        },
+        {
+          "id": "about",
+          "y": 670,
+          "height": 428
+        },
+        {
+          "id": "why-title",
+          "y": 1098,
+          "height": 332
+        },
+        {
+          "id": "services",
+          "y": 1430,
+          "height": 552
+        },
+        {
+          "id": "benefits-title",
+          "y": 2010,
+          "height": 370
+        },
+        {
+          "id": "difference-title",
+          "y": 2380,
+          "height": 289
+        },
+        {
+          "id": "steps",
+          "y": 2670,
+          "height": 243
+        },
+        {
+          "id": "reviews-title",
+          "y": 2912,
+          "height": 347
+        },
+        {
+          "id": "contact",
+          "y": 3260,
+          "height": 431
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 3706,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 674
+        },
+        {
+          "id": "about",
+          "y": 674,
+          "height": 409
+        },
+        {
+          "id": "why-title",
+          "y": 1083,
+          "height": 337
+        },
+        {
+          "id": "services",
+          "y": 1421,
+          "height": 550
+        },
+        {
+          "id": "benefits-title",
+          "y": 1999,
+          "height": 370
+        },
+        {
+          "id": "difference-title",
+          "y": 2369,
+          "height": 295
+        },
+        {
+          "id": "steps",
+          "y": 2664,
+          "height": 241
+        },
+        {
+          "id": "reviews-title",
+          "y": 2905,
+          "height": 371
+        },
+        {
+          "id": "contact",
+          "y": 3275,
+          "height": 431
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 3767,
+      "overflow": false,
+      "missing": [],
+      "clippedText": [],
+      "sections": [
+        {
+          "id": "home",
+          "y": 0,
+          "height": 674
+        },
+        {
+          "id": "about",
+          "y": 674,
+          "height": 419
+        },
+        {
+          "id": "why-title",
+          "y": 1093,
+          "height": 348
+        },
+        {
+          "id": "services",
+          "y": 1441,
+          "height": 560
+        },
+        {
+          "id": "benefits-title",
+          "y": 2029,
+          "height": 370
+        },
+        {
+          "id": "difference-title",
+          "y": 2399,
+          "height": 305
+        },
+        {
+          "id": "steps",
+          "y": 2704,
+          "height": 251
+        },
+        {
+          "id": "reviews-title",
+          "y": 2955,
+          "height": 381
+        },
+        {
+          "id": "contact",
+          "y": 3336,
+          "height": 431
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "interactions": "menu/Escape/focus; footer FAQ and navigation disclosure; nested FAQ mouse/keyboard; WhatsApp actual popup and Arabic message; services anchor; RTL review controls; reduced motion; no-JS visibility and FAQ; file:// font and screenshot; unverified figures excluded on simulated public host passed",
+  "classicScrollbarFileChecks": [
+    {
+      "viewport": 390,
+      "content": 375,
+      "body": 375,
+      "height": 1347,
+      "configuredWidth": "375px"
+    },
+    {
+      "viewport": 576,
+      "content": 561,
+      "body": 561,
+      "height": 2002,
+      "configuredWidth": "561px"
+    }
+  ]
+}

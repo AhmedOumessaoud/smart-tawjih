@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="WhatsApp">
+  <defs><linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#26d366"/><stop offset="1" stop-color="#08a846"/></linearGradient></defs>
+  <circle cx="128" cy="128" r="124" fill="url(#green)"/>
+  <path d="M195 127a67 67 0 0 1-101 58l-37 10 10-36a67 67 0 1 1 128-32Z" fill="none" stroke="#fff" stroke-width="11" stroke-linejoin="round"/>
+  <path d="M99 86c-3-6-9-4-12 2l-5 10c-7 16 10 39 28 53 17 14 38 23 49 14l11-11c4-4 2-9-3-11l-18-8c-4-2-7 0-10 4l-5 6c-13-6-26-19-33-32l7-6c4-3 4-6 2-10Z" fill="#fff"/>
+</svg>
