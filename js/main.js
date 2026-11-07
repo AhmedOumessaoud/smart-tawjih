@@ -53,9 +53,18 @@
       if (review.image) { const img = document.createElement('img'); img.className = 'review-photo'; img.src = review.image; img.alt = review.name; img.width = 88; img.height = 88; img.loading = 'lazy'; article.append(img); }
       const quote = document.createElement('blockquote'); quote.textContent = review.quote;
       const cite = document.createElement('cite'); cite.textContent = review.name;
-      article.append(quote, cite); track.append(article);
+      const rating = document.createElement('span'); rating.className = 'review-rating';
+      rating.textContent = '★★★★★'; rating.setAttribute('role', 'img'); rating.setAttribute('aria-label', '5 من 5');
+      const identity = document.createElement('div'); identity.className = 'review-identity';
+      const initial = document.createElement('span'); initial.className = 'review-initial';
+      initial.textContent = review.initial || review.name.charAt(0); initial.setAttribute('aria-hidden', 'true');
+      const admission = document.createElement('p'); admission.className = 'review-admission'; admission.textContent = review.admission || '';
+      const author = document.createElement('div'); author.append(cite, admission);
+      identity.append(initial, author);
+      article.append(rating, quote, identity); track.append(article);
     });
     document.querySelector('.demo-label').hidden = true;
+    track.setAttribute('aria-label', 'آراء الطلاب');
   }
   const track = document.querySelector('.reviews');
   const dots = document.querySelector('.dots');

@@ -1,0 +1,50 @@
+{
+  "widths": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "bodyFont": "16px",
+      "cardFont": "17px"
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "bodyFont": "16px",
+      "cardFont": "17px"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyFont": "16px",
+      "cardFont": "17px"
+    },
+    {
+      "width": 430,
+      "scrollWidth": 430,
+      "bodyFont": "16px",
+      "cardFont": "17px"
+    },
+    {
+      "width": 563,
+      "scrollWidth": 563,
+      "bodyFont": "16px",
+      "cardFont": "17px"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyFont": "18px",
+      "cardFont": "17px"
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "bodyFont": "18px",
+      "cardFont": "19px"
+    }
+  ],
+  "errors": [],
+  "menu": true,
+  "registration": true,
+  "faq": true
+}

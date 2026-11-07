@@ -6,15 +6,29 @@ window.SMART_TAWJIH = {
   // Keep false until the owner verifies all three claims.
   statisticsApproved: false,
   // Local file/localhost design preview only; never enables public claims.
-  showLocalReferenceStats: true,
+  showLocalReferenceStats: false,
   statistics: [
     { value: '1500+', label: 'تلميذ وتلميذة تمت مواكبتهم', icon: 'person' },
     { value: '430+', label: 'مؤسسة ومدرسة شريكة', icon: 'university' },
     { value: '95%', label: 'نسبة رضا المستفيدين', icon: 'trophy' }
   ],
-  // Generated portraits are design previews. Add approved real reviews here.
-  testimonialsApproved: false,
-  testimonials: []
+  // Testimonials selected and approved by the owner from the original website.
+  // Initials only: no generated portrait represents a named student.
+  testimonialsApproved: true,
+  testimonials: [
+    {
+      name: 'أيوب المنصوري', initial: 'أ', admission: 'مقبول في ENSA الرباط', rating: 5,
+      quote: 'كنت حائراً تماماً بين عدة تخصصات ولم أكن أعرف من أين أبدأ. بفضل اختبار الميولات وجلسة التوجيه مع Smart Tawjih، أصبح أمامي خارطة طريق واضحة. اليوم أنا مسجل في ENSA الرباط وسعيد جداً بهذا القرار.'
+    },
+    {
+      name: 'ريم بنعلي', initial: 'ر', admission: 'مقبولة في ENCG كازا', rating: 5,
+      quote: 'اختبار الميولات غير نظرتي تماماً لمستقبلي المهني. الجلسة الفردية مع المستشار كانت نقطة تحول حقيقية — ساعدني على اكتشاف مسار لم أكن أفكر فيه أصلاً، وها أنا اليوم في تخصصي الحقيقي.'
+    },
+    {
+      name: 'يوسف الإدريسي', initial: 'ي', admission: 'مقبول في FST طنجة', rating: 5,
+      quote: 'اخترت باقة ADMISSION وكانت قراراً صائباً بامتياز. سجلوا لي في أكثر من 15 مؤسسة وتتبعوا كل الآجال بدقة متناهية. حصلت على قبولات متعددة ومن أكثر من مؤسسة رائدة — ما خسرت ولا فرصة!'
+    }
+  ]
 };
 
 window.SMART_TAWJIH.registration = {
