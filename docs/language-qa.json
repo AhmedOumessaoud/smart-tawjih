@@ -1,0 +1,83 @@
+{
+  "widths": [
+    {
+      "lang": "ar",
+      "width": 320,
+      "scroll": 320,
+      "dir": "rtl"
+    },
+    {
+      "lang": "ar",
+      "width": 360,
+      "scroll": 360,
+      "dir": "rtl"
+    },
+    {
+      "lang": "ar",
+      "width": 390,
+      "scroll": 390,
+      "dir": "rtl"
+    },
+    {
+      "lang": "ar",
+      "width": 430,
+      "scroll": 430,
+      "dir": "rtl"
+    },
+    {
+      "lang": "ar",
+      "width": 768,
+      "scroll": 768,
+      "dir": "rtl"
+    },
+    {
+      "lang": "ar",
+      "width": 1280,
+      "scroll": 1280,
+      "dir": "rtl"
+    },
+    {
+      "lang": "fr",
+      "width": 320,
+      "scroll": 320,
+      "dir": "ltr"
+    },
+    {
+      "lang": "fr",
+      "width": 360,
+      "scroll": 360,
+      "dir": "ltr"
+    },
+    {
+      "lang": "fr",
+      "width": 390,
+      "scroll": 390,
+      "dir": "ltr"
+    },
+    {
+      "lang": "fr",
+      "width": 430,
+      "scroll": 430,
+      "dir": "ltr"
+    },
+    {
+      "lang": "fr",
+      "width": 768,
+      "scroll": 768,
+      "dir": "ltr"
+    },
+    {
+      "lang": "fr",
+      "width": 1280,
+      "scroll": 1280,
+      "dir": "ltr"
+    }
+  ],
+  "errors": [],
+  "errorFrench": "Indiquez votre nom complet (3 caractères minimum).",
+  "retained": "TEST PARENT",
+  "handoff": "Encore une dernière étape !",
+  "persisted": "fr",
+  "frenchWhatsApp": true,
+  "notesPreserved": true
+}
