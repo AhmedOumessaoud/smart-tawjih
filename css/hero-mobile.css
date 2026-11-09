@@ -10,7 +10,7 @@
   opacity: 1; visibility: visible; transform: translateX(-50%); pointer-events: auto;
   direction: ltr; z-index: 40;
 }
-.floating-wa img { width: 26px; height: 26px; filter: brightness(0) invert(1); }
+.floating-wa img { width: 26px; height: 26px; filter: none; }
 body { padding-bottom: 84px; }
 /* One mobile composition for both languages: clear header, portrait, copy, then CTAs. */
 @media (max-width: 700px) {
