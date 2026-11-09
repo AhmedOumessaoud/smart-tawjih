@@ -1,0 +1,38 @@
+{
+  "before": "Admission",
+  "after": "Admission Plus",
+  "details": true,
+  "checks": [
+    {
+      "width": 320,
+      "scroll": 320,
+      "packHeight": 542
+    },
+    {
+      "width": 360,
+      "scroll": 360,
+      "packHeight": 520
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "packHeight": 520
+    },
+    {
+      "width": 430,
+      "scroll": 430,
+      "packHeight": 497
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "packHeight": 635
+    },
+    {
+      "width": 1280,
+      "scroll": 1280,
+      "packHeight": 531
+    }
+  ],
+  "errors": []
+}

@@ -162,17 +162,22 @@
     });
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
   }
-  const flagMA = '<svg viewBox="0 0 30 20" aria-hidden="true"><path fill="#c1272d" d="M0 0h30v20H0z"/><path d="m15 4 3.5 10.5-9-6.5h11l-9 6.5z" fill="none" stroke="#006233" stroke-width="1.2"/></svg>';
-  const flagFR = '<svg viewBox="0 0 30 20" aria-hidden="true"><path fill="#fff" d="M0 0h30v20H0z"/><path fill="#002395" d="M0 0h10v20H0z"/><path fill="#ed2939" d="M20 0h10v20H20z"/></svg>';
+  const flagMA = '<svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><path fill="#c1272d" d="M0 0h30v20H0z"/><path d="m15 4 3.5 10.5-9-6.5h11l-9 6.5z" fill="none" stroke="#006233" stroke-width="1.2"/></svg>';
+  const flagFR = '<svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><path fill="#fff" d="M0 0h30v20H0z"/><path fill="#002395" d="M0 0h10v20H0z"/><path fill="#ed2939" d="M20 0h10v20H20z"/></svg>';
   const bar = document.createElement('div'); bar.className = 'language-bar';
-  bar.innerHTML = `<div class="language-switch" role="group" aria-label="Langue / اللغة"><button type="button" data-lang="ar" lang="ar" aria-label="العربية">${flagMA}<span>العربية</span></button><button type="button" data-lang="fr" lang="fr" aria-label="Français">${flagFR}<span>Français</span></button></div>`;
-  document.querySelector('.hero').prepend(bar);
+  bar.innerHTML = '<div class="language-switch"><button type="button"></button></div>';
+  document.querySelector('.header').append(bar);
   const metadata = [...document.querySelectorAll('meta[name="description"],meta[property="og:description"],meta[property="og:title"],meta[property="og:locale"]')]
     .map(element => ({ element, original: element.content }));
   function setLanguage(next) {
     language = next === 'fr' ? 'fr' : 'ar';
     document.documentElement.lang = language; document.documentElement.dir = language === 'fr' ? 'ltr' : 'rtl';
-    bar.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
+    const languageButton = bar.querySelector('button');
+    const target = language === 'ar' ? 'fr' : 'ar';
+    languageButton.dataset.lang = target;
+    languageButton.lang = target;
+    languageButton.setAttribute('aria-label', target === 'fr' ? 'Passer en français' : 'التبديل إلى العربية');
+    languageButton.innerHTML = `<span>${target.toUpperCase()}</span>${target === 'fr' ? flagFR : flagMA}`;
     document.title = language === 'fr' ? 'Smart Tawjih | Votre avenir mérite un choix éclairé' : 'Smart Tawjih | مستقبلك يستحق قراراً مدروساً';
     metadata.forEach(({ element, original }) => {
       element.content = language === 'ar' ? original : element.getAttribute('property') === 'og:locale' ? 'fr_MA'

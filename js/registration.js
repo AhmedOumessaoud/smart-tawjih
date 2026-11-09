@@ -19,6 +19,17 @@
   <section class="registration-handoff" hidden aria-labelledby="registration-handoff-title"><div class="registration-check" aria-hidden="true">✓</div><h3 id="registration-handoff-title" tabindex="-1">باقي غير خطوة أخيرة!</h3><h4>تم تجهيز طلبك! كمل إرسال الرسالة في واتساب.</h4><p>وجدنا ليك المعلومات كاملة. تأكد من إرسال الرسالة في واتساب باش يتوصل فريق Smart Tawjih بطلبك.</p><a class="registration-primary" id="registration-reopen" target="_blank" rel="noopener noreferrer">فتح واتساب من جديد <img src="assets/icons/whatsapp.svg" alt=""></a><button class="registration-link" type="button" data-edit>مراجعة المعلومات</button><button class="registration-link" type="button" data-close>العودة إلى الصفحة الرئيسية</button><img class="registration-campus" src="assets/images/moroccan-campus.webp" alt="معمار مغربي ونخيل" width="600" height="250"></section></div>`;
   document.body.append(dialog);
   const form = dialog.querySelector('form'), steps = [...dialog.querySelectorAll('[data-step]')];
+  let selectedOffer = '';
+  const offerSummary = document.createElement('p'); offerSummary.className = 'registration-kicker'; offerSummary.hidden = true;
+  dialog.querySelector('.registration-header').append(offerSummary);
+  document.addEventListener('click', event => {
+    const choice = event.target.closest('[data-offer]');
+    if (choice) {
+      selectedOffer = choice.dataset.offer;
+      offerSummary.textContent = `Pack ${selectedOffer}`;
+      offerSummary.hidden = false;
+    }
+  });
   let step = 1, opener, scrollY = 0, closing = false, submitted = false, autoStudentName = '', bodyStyle = '';
   const value = name => form.elements.namedItem(name)?.value?.trim() || '';
   const setError = (name, message) => {
@@ -60,10 +71,11 @@
       lines.push(`Annee scolaire : ${value('academicYear')}`, '', 'Services souhaites :',
         ...[...form.querySelectorAll('[name=services]:checked')].map(el => '- ' + t(el.value)));
       if (value('notes')) lines.push('', 'Remarques :', value('notes'));
+      if (selectedOffer) lines.push('', `Pack : ${selectedOffer}`);
       lines.push('', 'Consentement au traitement de la demande : oui', 'Merci.');
       return lines.join('\n');
     }
- const lines=['السلام عليكم، بغيت نستافد من الاستشارة الأولية ديال SMART TAWJIH.','','📋 طلب استشارة جديد','',`👤 صفة مقدم الطلب: ${value('applicant')}`,`👤 الاسم الكامل: ${value('fullName')}`,`📱 رقم الهاتف: ${normalizePhone(value('phone'))}`,`📍 المدينة: ${value('city')==='أخرى'?value('customCity'):value('city')}`,'',`🎓 اسم التلميذ(ة): ${value('studentName')}`,`📚 المستوى الدراسي: ${value('level')}`];if(!dialog.querySelector('#reg-branch-wrap').hidden)lines.push(`📖 الشعبة: ${value('branch')}`);if(value('regional'))lines.push(`📊 نقطة الجهوي: ${grade(value('regional'))}`);if(!dialog.querySelector('#reg-national-wrap').hidden&&value('national'))lines.push(`📊 نقطة الوطني: ${grade(value('national'))}`);lines.push(`🗓 السنة الدراسية: ${value('academicYear')}`,'','✅ الخدمات المطلوبة:',...[...form.querySelectorAll('[name=services]:checked')].map(el=>'- '+el.value));if(value('notes'))lines.push('','📝 ملاحظات إضافية:',value('notes'));lines.push('','الموافقة على استعمال المعلومات لمعالجة الاستشارة: نعم','شكراً لكم.');return lines.join('\n'); }
+ const lines=['السلام عليكم، بغيت نستافد من الاستشارة الأولية ديال SMART TAWJIH.','','📋 طلب استشارة جديد','',`👤 صفة مقدم الطلب: ${value('applicant')}`,`👤 الاسم الكامل: ${value('fullName')}`,`📱 رقم الهاتف: ${normalizePhone(value('phone'))}`,`📍 المدينة: ${value('city')==='أخرى'?value('customCity'):value('city')}`,'',`🎓 اسم التلميذ(ة): ${value('studentName')}`,`📚 المستوى الدراسي: ${value('level')}`];if(!dialog.querySelector('#reg-branch-wrap').hidden)lines.push(`📖 الشعبة: ${value('branch')}`);if(value('regional'))lines.push(`📊 نقطة الجهوي: ${grade(value('regional'))}`);if(!dialog.querySelector('#reg-national-wrap').hidden&&value('national'))lines.push(`📊 نقطة الوطني: ${grade(value('national'))}`);lines.push(`🗓 السنة الدراسية: ${value('academicYear')}`,'','✅ الخدمات المطلوبة:',...[...form.querySelectorAll('[name=services]:checked')].map(el=>'- '+el.value));if(value('notes'))lines.push('','📝 ملاحظات إضافية:',value('notes'));lines.push('','الموافقة على استعمال المعلومات لمعالجة الاستشارة: نعم','شكراً لكم.');if(selectedOffer)lines.push('',`Pack : ${selectedOffer}`);return lines.join('\n'); }
   form.addEventListener('submit',e=>{e.preventDefault();if(step!==3){steps[step-1].querySelector('[data-next]').click();return;}if(submitted)return;for(let i=1;i<=3;i++){if(!validate(i)){showStep(i,false);steps[i-1].querySelector('[aria-invalid=true]')?.focus();return;}}submitted=true;const url=`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(message())}`;dialog.querySelector('#registration-reopen').href=url;window.open(url,'_blank','noopener,noreferrer');dialog.querySelector('.registration-form-content').hidden=true;dialog.querySelector('.registration-handoff').hidden=false;dialog.querySelector('#registration-handoff-title').focus({preventScroll:true});dialog.scrollTo({top:0,behavior:'instant'});});
   showStep(1,false);conditions();
 })();

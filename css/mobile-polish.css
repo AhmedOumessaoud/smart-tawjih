@@ -1,0 +1,78 @@
+/* Compact offer cards: long optional detail never stretches every slide. */
+#offers .offers-grid { align-items: flex-start; }
+#offers .offer { gap: 10px; padding: 22px 20px; }
+#offers .offer .offer-price { font-size: 34px; margin: 0; }
+#offers .offer .offer-intro { font-size: 14px; line-height: 1.6; }
+#offers .offer .offer-tag { font-size: 13px; line-height: 1.5; }
+#offers .offer h3 { font-size: 22px; }
+#offers .offer .offer-features { gap: 8px; margin: 0; }
+#offers .offer .offer-features li { font-size: 14px; line-height: 1.6; padding-inline-start: 20px; }
+.offer-details summary { cursor: pointer; color: #173d68; font: 700 14px/1.5 Tajawal,Arial,sans-serif; padding: 8px 0; }
+.offer-details[open] .offer-features { padding-top: 4px; }
+#offers .offer .button { margin-top: 8px; min-height: 44px; font-size: 15px; }
+.offers-playback { display: block; margin: 12px auto 0; padding: 7px 14px; min-height: 36px; background: transparent; border: 1px solid #cbd6e4; border-radius: 20px; color: #526982; font: 600 13px/1.5 Tajawal,Arial,sans-serif; }
+.offers-playback[hidden] { display: none; }
+@media (max-width: 700px) {
+  /* Physical image-left / copy-right placement in Arabic and French. */
+  .hero .hero-scene { width: 44%; object-position: 19% center; mask-image: linear-gradient(90deg, #000 60%, transparent 100%); }
+  .hero h1, html[lang="fr"] .hero h1 { margin-left: 43%; }
+  .hero p, html[lang="fr"] .hero p { margin-left: 43%; }
+  main .benefits, html[lang="fr"] main .benefits { grid-template-columns: 61% 39%; direction: rtl; }
+  main .benefit-copy, html[lang="fr"] main .benefit-copy { grid-column: 1; padding: 8px 16px 8px 10px; min-width: 0; }
+  main .benefits .desk, html[lang="fr"] main .benefits .desk { left: 0; right: auto; width: 39%; mask-image: linear-gradient(90deg, #000 65%, transparent 100%); }
+  html[lang="fr"] main .benefit-copy { direction: ltr; text-align: left; }
+  html[lang="fr"] main .benefit-copy h2 span { direction: ltr; unicode-bidi: isolate; }
+  #offers .offer { padding: 20px; }
+  html[lang="fr"] main .section-title,
+  html[lang="fr"] main #about .section-title,
+  html[lang="fr"] main .section:has(#why-title) .section-title,
+  html[lang="fr"] main .section:has(#difference-title) .section-title,
+  html[lang="fr"] main #steps .section-title { font-size: 23px; line-height: 1.35; margin-bottom: 20px; }
+  html[lang="fr"] main .section-title::before,
+  html[lang="fr"] main .section-title::after { width: 14px; flex-shrink: 0; }
+  html[lang="fr"] main .about-content p { font-size: 16px; line-height: 1.7; }
+  html[lang="fr"] main .stat strong { font-size: 15px; line-height: 1.4; }
+  html[lang="fr"] main .stat p { font-size: 13px; line-height: 1.5; }
+  html[lang="fr"] main .card-grid .card { padding: 20px 12px; min-height: 150px; }
+  html[lang="fr"] main .section:has(#why-title) .card-grid .card h3,
+  html[lang="fr"] main .section:has(#difference-title) .card-grid .card h3 { font-size: 16px; line-height: 1.5; }
+  html[lang="fr"] main .help-list li { font-size: 14px; line-height: 1.55; gap: 7px; padding: 10px 8px; }
+  html[lang="fr"] main .help-list li img { display: none; }
+  html[lang="fr"] main .help-layout { grid-template-columns: 64% 36%; }
+  html[lang="fr"] main .benefits { grid-template-columns: 61% 39%; padding-block: 24px; }
+  html[lang="fr"] main .benefit-copy h2 { font-size: 22px; line-height: 1.35; }
+  html[lang="fr"] main .benefits .desk { width: 39%; }
+  html[lang="fr"] main .benefits li { font-size: 14px; line-height: 1.65; }
+  html[lang="fr"] main #steps .step h3 { font-size: 17px; line-height: 1.45; }
+  html[lang="fr"] main #steps .step-description { font-size: 15px; line-height: 1.65; }
+  html[lang="fr"] main .section:has(#reviews-title) #reviews-title { font-size: 26px; line-height: 1.4; }
+}
+
+/* French reads left to right: copy on the left, photography on the right. */
+@media (max-width: 700px) {
+  html[lang="ar"] .hero .hero-scene {
+    left: 0; right: auto; transform: none;
+    mask-image: linear-gradient(90deg, #000 60%, transparent 100%);
+  }
+  html[lang="ar"] .hero h1,
+  html[lang="ar"] .hero p { margin-left: 43%; margin-right: 0; text-align: right; }
+}
+html[lang="fr"] .hero .hero-inner { direction: ltr; }
+html[lang="fr"] .hero .hero-scene {
+  transform: none;
+  mask-image: linear-gradient(270deg, #000 25%, #000a 38%, #0002 48%, transparent 62%);
+}
+html[lang="fr"] main .benefits { direction: ltr; }
+html[lang="fr"] main .benefit-copy { direction: ltr; text-align: left; }
+html[lang="fr"] main .benefits .desk {
+  left: auto; right: 0;
+  mask-image: linear-gradient(270deg, #000 65%, transparent 100%);
+}
+@media (max-width: 700px) {
+  html[lang="fr"] .hero .hero-scene { left: auto; right: 0; mask-image: linear-gradient(270deg, #000 60%, transparent 100%); }
+  html[lang="fr"] .hero h1,
+  html[lang="fr"] .hero p { margin-left: 0; margin-right: 43%; }
+  html[lang="fr"] main .benefits { direction: ltr; grid-template-columns: 61% 39%; }
+  html[lang="fr"] main .benefit-copy { grid-column: 1; padding: 8px 10px 8px 16px; }
+  html[lang="fr"] main .benefits .desk { left: auto; right: 0; width: 39%; }
+}

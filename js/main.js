@@ -69,11 +69,16 @@
   const track = document.querySelector('.reviews');
   const dots = document.querySelector('.dots');
   const cards = Array.from(track.children);
+  const reviewSection = track.closest('section');
+  const overall = document.createElement('p'); overall.className = 'reviews-overall'; overall.textContent = '★★★★★'; overall.setAttribute('aria-hidden', 'true');
+  document.querySelector('#reviews-title').after(overall);
   let currentReview = 0;
   function selectReview(index) {
     currentReview = Math.max(0, Math.min(index, cards.length - 1));
     const card = cards[currentReview];
-    const delta = card.getBoundingClientRect().right - track.getBoundingClientRect().right;
+    const rtl = getComputedStyle(track).direction === 'rtl';
+    const delta = rtl ? card.getBoundingClientRect().right - track.getBoundingClientRect().right
+      : card.getBoundingClientRect().left - track.getBoundingClientRect().left;
     track.scrollTo({ left: track.scrollLeft + delta, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     Array.from(dots.children).forEach((dot, i) => dot.setAttribute('aria-current', String(i === currentReview)));
   }
@@ -93,8 +98,10 @@
   track.addEventListener('scroll', () => {
     if (scrollFrame) return;
     scrollFrame = requestAnimationFrame(() => {
-      const right = track.getBoundingClientRect().right;
-      currentReview = cards.reduce((best, card, i) => Math.abs(card.getBoundingClientRect().right - right) < Math.abs(cards[best].getBoundingClientRect().right - right) ? i : best, 0);
+      const rtl = getComputedStyle(track).direction === 'rtl';
+      const edge = rtl ? 'right' : 'left';
+      const boundary = track.getBoundingClientRect()[edge];
+      currentReview = cards.reduce((best, card, i) => Math.abs(card.getBoundingClientRect()[edge] - boundary) < Math.abs(cards[best].getBoundingClientRect()[edge] - boundary) ? i : best, 0);
       Array.from(dots.children).forEach((dot, i) => dot.setAttribute('aria-current', String(i === currentReview)));
       scrollFrame = null;
     });
@@ -102,14 +109,42 @@
   track.addEventListener('keydown', event => {
     if (event.target !== track || !['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
     event.preventDefault();
-    selectReview(event.key === 'Home' ? 0 : event.key === 'End' ? cards.length - 1 : currentReview + (event.key === 'ArrowLeft' ? 1 : -1));
+    const rtl = getComputedStyle(track).direction === 'rtl';
+    selectReview(event.key === 'Home' ? 0 : event.key === 'End' ? cards.length - 1 : currentReview + ((event.key === 'ArrowLeft') === rtl ? 1 : -1));
   });
+  const playback = document.createElement('div'); playback.className = 'reviews-playback';
+  const toggle = document.createElement('button'); toggle.type = 'button'; playback.append(toggle); dots.after(playback);
+  let paused = false, interacting = false, visible = false, resumeAt = 0;
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const mobileReviews = matchMedia('(max-width: 700px)');
+  function updatePlayback() {
+    const french = document.documentElement.lang === 'fr';
+    toggle.textContent = paused ? (french ? 'Reprendre le défilement' : 'تشغيل العرض التلقائي') : (french ? 'Mettre en pause' : 'إيقاف العرض التلقائي');
+    toggle.setAttribute('aria-pressed', String(paused));
+    playback.hidden = !mobileReviews.matches || reducedMotion.matches;
+  }
+  toggle.addEventListener('click', () => { paused = !paused; updatePlayback(); });
+  track.addEventListener('pointerdown', () => { interacting = true; });
+  const release = () => { if (interacting) { interacting = false; resumeAt = Date.now() + 8000; } };
+  window.addEventListener('pointerup', release); window.addEventListener('pointercancel', release);
+  reviewSection.addEventListener('focusin', () => { resumeAt = Date.now() + 8000; });
+  dots.addEventListener('click', () => { resumeAt = Date.now() + 8000; });
+  if ('IntersectionObserver' in window) new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, { threshold: .25 }).observe(track);
+  else visible = true;
+  setInterval(() => {
+    if (mobileReviews.matches && !reducedMotion.matches && !paused && !interacting && visible && !document.hidden && Date.now() >= resumeAt && !reviewSection.contains(document.activeElement)) {
+      selectReview((currentReview + 1) % cards.length);
+    }
+  }, 7000);
+  document.addEventListener('languagechange', () => { updatePlayback(); requestAnimationFrame(() => selectReview(currentReview)); });
+  mobileReviews.addEventListener('change', updatePlayback); reducedMotion.addEventListener('change', updatePlayback);
+  updatePlayback();
   const floating = document.querySelector('.floating-wa');
   const hero = document.querySelector('.hero');
   const contact = document.querySelector('#contact');
   if ('IntersectionObserver' in window) {
-    new IntersectionObserver(([entry]) => floating.classList.toggle('is-visible', !entry.isIntersecting), { threshold: 0 }).observe(hero);
-    new IntersectionObserver(([entry]) => floating.classList.toggle('is-at-contact', entry.isIntersecting), { threshold: 0 }).observe(contact);
+    floating.classList.add('is-visible');
+
     if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
       const observer = new IntersectionObserver(entries => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: .08 });
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el)); document.documentElement.classList.add('motion');

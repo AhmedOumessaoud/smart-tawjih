@@ -1,0 +1,187 @@
+{
+  "checks": [
+    {
+      "lang": "ar",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 360,
+      "scrollWidth": 360,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 390,
+      "scrollWidth": 390,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 414,
+      "scrollWidth": 414,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 430,
+      "scrollWidth": 430,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 563,
+      "scrollWidth": 563,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 700,
+      "scrollWidth": 700,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "ar",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 360,
+      "scrollWidth": 360,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 390,
+      "scrollWidth": 390,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 414,
+      "scrollWidth": 414,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 430,
+      "scrollWidth": 430,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 563,
+      "scrollWidth": 563,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 700,
+      "scrollWidth": 700,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    },
+    {
+      "lang": "fr",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "headingBeforeText": true,
+      "buttonsBelowText": true,
+      "buttonHeight": 50,
+      "buttonsSeparate": true
+    }
+  ],
+  "errors": [],
+  "menu": true,
+  "registration": true
+}
