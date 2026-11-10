@@ -10,7 +10,7 @@
 .offer-details summary { cursor: pointer; color: #173d68; font: 700 14px/1.5 Tajawal,Arial,sans-serif; padding: 8px 0; }
 .offer-details[open] .offer-features { padding-top: 4px; }
 #offers .offer .button { margin-top: 8px; min-height: 44px; font-size: 15px; }
-.offers-playback { display: block; margin: 12px auto 0; padding: 7px 14px; min-height: 36px; background: transparent; border: 1px solid #cbd6e4; border-radius: 20px; color: #526982; font: 600 13px/1.5 Tajawal,Arial,sans-serif; }
+.offers-playback { display: none; }
 .offers-playback[hidden] { display: none; }
 @media (max-width: 700px) {
   /* Physical image-left / copy-right placement in Arabic and French. */
@@ -67,6 +67,15 @@ html[lang="fr"] main .benefit-copy { direction: ltr; text-align: left; }
 html[lang="fr"] main .benefits .desk {
   left: auto; right: 0;
   mask-image: linear-gradient(270deg, #000 65%, transparent 100%);
+}
+@media (min-width: 701px) {
+  html[lang="fr"] .hero .hero-scene {
+    inset: 100px 0 0 auto;
+    width: 52%; height: calc(100% - 100px);
+    object-fit: cover; object-position: 12% center;
+    mask-image: linear-gradient(90deg, transparent, #000 18%, #000 100%);
+  }
+  html[lang="fr"] .hero .hero-copy { padding-right: 28px; }
 }
 @media (max-width: 700px) {
   html[lang="fr"] .hero .hero-scene { left: auto; right: 0; mask-image: linear-gradient(270deg, #000 60%, transparent 100%); }

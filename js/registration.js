@@ -78,4 +78,12 @@
  const lines=['السلام عليكم، بغيت نستافد من الاستشارة الأولية ديال SMART TAWJIH.','','📋 طلب استشارة جديد','',`👤 صفة مقدم الطلب: ${value('applicant')}`,`👤 الاسم الكامل: ${value('fullName')}`,`📱 رقم الهاتف: ${normalizePhone(value('phone'))}`,`📍 المدينة: ${value('city')==='أخرى'?value('customCity'):value('city')}`,'',`🎓 اسم التلميذ(ة): ${value('studentName')}`,`📚 المستوى الدراسي: ${value('level')}`];if(!dialog.querySelector('#reg-branch-wrap').hidden)lines.push(`📖 الشعبة: ${value('branch')}`);if(value('regional'))lines.push(`📊 نقطة الجهوي: ${grade(value('regional'))}`);if(!dialog.querySelector('#reg-national-wrap').hidden&&value('national'))lines.push(`📊 نقطة الوطني: ${grade(value('national'))}`);lines.push(`🗓 السنة الدراسية: ${value('academicYear')}`,'','✅ الخدمات المطلوبة:',...[...form.querySelectorAll('[name=services]:checked')].map(el=>'- '+el.value));if(value('notes'))lines.push('','📝 ملاحظات إضافية:',value('notes'));lines.push('','الموافقة على استعمال المعلومات لمعالجة الاستشارة: نعم','شكراً لكم.');if(selectedOffer)lines.push('',`Pack : ${selectedOffer}`);return lines.join('\n'); }
   form.addEventListener('submit',e=>{e.preventDefault();if(step!==3){steps[step-1].querySelector('[data-next]').click();return;}if(submitted)return;for(let i=1;i<=3;i++){if(!validate(i)){showStep(i,false);steps[i-1].querySelector('[aria-invalid=true]')?.focus();return;}}submitted=true;const url=`https://wa.me/${config.whatsapp}?text=${encodeURIComponent(message())}`;dialog.querySelector('#registration-reopen').href=url;window.open(url,'_blank','noopener,noreferrer');dialog.querySelector('.registration-form-content').hidden=true;dialog.querySelector('.registration-handoff').hidden=false;dialog.querySelector('#registration-handoff-title').focus({preventScroll:true});dialog.scrollTo({top:0,behavior:'instant'});});
   showStep(1,false);conditions();
+  // A shareable fragment opens the same form without submitting any information.
+  const openFromLink = () => {
+    if (location.hash === '#registration') window.openRegistrationModal();
+  };
+  window.addEventListener('hashchange', openFromLink);
+  // Wait for the language module and the remaining deferred scripts on first load.
+  if (document.readyState === 'complete') openFromLink();
+  else window.addEventListener('load', openFromLink, { once: true });
 })();
