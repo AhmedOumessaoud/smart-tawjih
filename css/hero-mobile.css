@@ -1,16 +1,17 @@
-/* Fixed WhatsApp action uses the same gold surface as registration. */
+/* Keep the fixed registration label on one line in Arabic and French. */
 .floating-wa, .floating-wa.is-visible, .floating-wa.is-at-contact {
   position: fixed; inset: auto auto calc(16px + env(safe-area-inset-bottom, 0px)) 50%;
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  width: auto; height: 50px; min-width: 160px; padding: 10px 22px;
+  width: max-content; max-width: calc(100vw - 32px); height: auto; min-height: 50px; min-width: 160px; padding: 10px 22px;
   border: 1px solid #ffe98a; border-radius: 32px;
   background: linear-gradient(110deg,#fff2a0,#ffde52 20%,#f8cc32 50%,#dfa50c 85%,#f5cf45);
   box-shadow: inset 0 1px 2px #fff9, 0 4px 16px #061b3c35;
   color: #061b3c; font: 800 22px/1.4 Tajawal,Arial,sans-serif;
   opacity: 1; visibility: visible; transform: translateX(-50%); pointer-events: auto;
-  direction: ltr; z-index: 40;
+  direction: ltr; z-index: 40; white-space: nowrap;
 }
-.floating-wa img { width: 26px; height: 26px; filter: none; }
+.floating-wa img { width: 26px; height: 26px; flex: 0 0 26px; filter: none; }
+.floating-wa span { flex: 0 0 auto; white-space: nowrap; line-height: 1.4; }
 body { padding-bottom: 84px; }
 /* One mobile composition for both languages: clear header, portrait, copy, then CTAs. */
 @media (max-width: 700px) {
