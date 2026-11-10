@@ -59,7 +59,7 @@
       <p class="offer-price"><bdi>${pack.price.toLocaleString('fr-FR')} DH</bdi></p>
       <ul class="offer-features">${highlights[index].map(feature => `<li>${pair(feature)}</li>`).join('')}</ul>
       <details class="offer-details"><summary>${text('جميع التفاصيل', 'Tous les détails')}</summary><p class="offer-intro">${pair(pack.intro)}</p><ul class="offer-features">${pack.features.map(feature => `<li>${pair(feature)}</li>`).join('')}</ul></details>
-      <a class="button gold" data-open-registration data-offer="${escape(pack.name)}" href="#registration">${text('اختار هاد الباقة', 'Choisir cette offre')} <img src="assets/icons/user-plus.svg" alt="" width="22" height="22"></a>
+      <a class="button gold" data-open-registration data-offer="${escape(pack.name)}" href="#registration">${text('اختر هذه الباقة', 'Choisir cette offre')} <img src="assets/icons/user-plus.svg" alt="" width="22" height="22"></a>
     </article>`).join('');
     controls.innerHTML = `<button type="button" data-prev aria-label="${text('الباقة السابقة', 'Offre précédente')}">‹</button><div class="offer-pagination">${packs.map((pack, i) => `<button type="button" data-pack="${i}" aria-label="${pack.name}" aria-controls="offer-track"><span>${pack.name}</span></button>`).join('')}</div><button type="button" data-next-pack aria-label="${text('الباقة التالية', 'Offre suivante')}">›</button>`;
     requestAnimationFrame(() => navigate(targetIndex, false));

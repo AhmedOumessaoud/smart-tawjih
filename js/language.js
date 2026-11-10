@@ -67,7 +67,7 @@
     'استمارة طلب الاستشارة والتسجيل': 'Demande de consultation et d’inscription',
     '3 خطوات بسيطة باش نتعرفو على احتياجاتك ونساعدوك تختار المسار المناسب': 'Trois étapes pour comprendre vos besoins et vous accompagner.',
     'الخطوة 1 من 3': 'Étape 1 sur 3', 'الخطوة 2 من 3': 'Étape 2 sur 3', 'الخطوة 3 من 3': 'Étape 3 sur 3',
-    'مرحباً بك! نبدأو بالتعارف': 'Bienvenue ! Faisons connaissance',
+    'مرحباً بك!': 'Bienvenue !',
     'عمّر معلومات التواصل باش نقدروا نتواصلو معاك': 'Indiquez vos coordonnées pour être recontacté.',
     'شكون اللي كيعمر الاستمارة؟': 'Qui remplit ce formulaire ?', 'أنا التلميذ(ة)': 'Je suis l’élève', 'أنا ولي الأمر': 'Je suis le parent',
     'الاسم الكامل': 'Nom complet', 'اسم ولي الأمر': 'Nom du parent', 'رقم الهاتف (واتساب)': 'Téléphone (WhatsApp)',

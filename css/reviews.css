@@ -29,7 +29,7 @@ main .reviews[data-approved="true"] .review-identity { order: 2; justify-content
 main .reviews[data-approved="true"] .review cite { font-size: 15px; color: #102d59; }
 main .reviews[data-approved="true"] .review-admission { font-size: 13px; margin-top: 2px; }
 main .reviews[data-approved="true"] .review-initial { background: #cbd4d7; color: #607982; width: 40px; height: 40px; flex-basis: 40px; }
-.reviews-playback { display: flex; justify-content: center; margin-top: 12px; }
+.reviews-playback { display: none; }
 .reviews-playback button { min-height: 40px; color: #eaf1fb; background: transparent; border: 1px solid #ffffff50; border-radius: 24px; padding: 7px 16px; font: 600 13px/1.5 Tajawal, Arial, sans-serif; }
 .section:has(#reviews-title) .dots button { background: #ffffff40; }
 .section:has(#reviews-title) .dots button[aria-current="true"] { background: #efbf41; }
